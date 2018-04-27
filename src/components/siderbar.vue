@@ -1,5 +1,5 @@
 <template>
-    <el-menu class="app-main-sider" router>
+    <el-menu class="app-main-sider" router :default-active="$route.path">
         <el-menu-item v-for="(item, index) in router" :index="item.path" :key="index" :route="item">
             {{item.title}}
         </el-menu-item>
